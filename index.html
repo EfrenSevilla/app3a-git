@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/cons1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CONTAMINACIÓN</h1>
+ </div>
+<div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>QUE ES LA CONTAMINACIÓN</h2>
+           <p>Se muestra una breve información</p>
+        </a>
+        </li>
+       <li class="ui-first-child ui-last-child">
+       <a href ="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>TIPOS DE CONTAMINACIÓN</h2>
+          <p>Se unos tipos de contaminación</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>CONSECUENCIAS DE LA CONTAMINACIÓN</h2>
+          <p>Muetra consecuencias importantes</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>RECICLAJE</h2>
+         <p>Muestra como es el reciclaje</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>MEDIDAS PREVENTIVAS</h2>
+           <p>Muestra medidas de prevención</p>
+       </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONTAMINACION EN MI ENTORNO</h2>
+           <p>Muestra la contaminación en mi entorno</p>
+       </a>
+       </li>
+         <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>LINKS PARA MAS INFORMACIÓN</h2>
+           <p>Se dan links para mas información</p>
+       </a>
+       </li>
+      </ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <img src="imagenes/globe_earth_planet_2767.png" width="89" height="88"/>
+    </div>
+    <div>
+    <h4>Aplicación Tres</h4>
+     <h4>Efrén Ulises Molina Sevilla</h4>
+   </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>QUE ES LA CONTAMINACIÓN</h1>
+  </div>
+    <div data-role="content" align="center">
+<div>
+Se llama contaminación a la transmisión y difusión de humos o gases tóxicos a medios como la atmósfera y el agua, como también a la presencia de polvos y gérmenes microbianos provenientes de los desechos de la actividad del ser humano.
+En la actualidad, el resultado del desarrollo y progreso tecnológico ha originado diversas formas de contaminación, las cuales alteran el equilibrio físico y mental del ser humano. Debido a esto, la actual contaminación se convierte en un problema más crítico que en épocas pasadas. A continuación enumeramos algunos tipos de contaminación:
+La Atmosférica (del aire)
+De las Aguas, de Ríos y Lagos.
+De los Mares
+Océanos
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>CONTAMINACIÓN</h1>
+   <div><img src="imagenes/vos8.jpg" width="70%"></div>
+      </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TIPOS DE CONTAMINACIÓN</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Contaminación Atmosférica</h2>
+<p>En las grandes ciudades, la contaminación del aire se debe a consecuencia de los escapes de gases de los motores de explosión, a los aparatos domésticos de la calefacción, a las industrias -que es liberado en la atmósfera, ya sea como gases, vapores o partículas sólidas capaces de mantenerse en suspensión, con valores superiores a los normales, perjudican la vida y la salud, tanto del ser humano como de animales y plantas. </p>
+<img src="imagenes/ca.jpg" width="70%" />
+<h2>Contaminación del agua</h2>
+Las fuentes naturales de agua que disponemos son: el agua de lluvia, ríos, lagos, mares y aguas subterráneas. Se encuentra en muchas rocas y piedras durísimas y también en la atmósfera en forma de nubes o nieblas.
+Desde siempre el hombre ha volcado sus desechos en las aguas. En condiciones normales los ríos pueden auto depurarse: las aguas arrastran los desechos hacia los océanos, las bacterias utilizan el oxígeno disuelto en las aguas y degradan los compuestos orgánicos, que a su vez, son consumidas por los peces y las plantas acuáticas de volviendo el oxígeno y el carbono a la biosfera.
+<img src="imagenes/agua.jpg" width="70%"/>
+<h2>Contaminación de los mares</h2>
+<p>La contaminación marítima se define como:
+  "Introducción por el hombre, directa o indirectamente, de sustancias o energías en el ámbito marino que produzcan efectos tan perjudiciales como dañan a los recursos vivos, peligro para la salud humana, obstáculo a las actividades Marinas, deterioro a la calidad del agua de mar para su uso, y reducción de los turísticos".
+  La clave de esta definición está en la expresión "Introducción por el hombre". Parte de este aporte es deliberado, en las aguas de los océanos, mientras que otros llegan a él en forma indirecta, a travé de los ríos.  </p>
+<p><img src="imagenes/mar.jpg" width="70%"/></p>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres, EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+    <embed src="imagenes/MEDIO_AMBIENTE___TOMA_CONCIENCIA(descargaryoutube.com).mp4" width="80%" height="387" align="MIDDLE"></embed>
+  <h2>Problemas para la salud:</h2> La contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.
+<h2>Debilitamiento de la capa de ozono:</h2> La capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.
+<h2>La contaminación afecta al suelo y al agua:</h2> La contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.
+<h2>La contaminación afecta al clima:</h2> 
+<p>Seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/cons1.jpg',1)"><center><img src="imagenes/cons.jpg" width="70%" id="Image36" align="middle"></center></a></p>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>RECICLAJE</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta. </p>
+<img src="imagenes/reci.gif" width="50%"/>
+<h2>El proceso del reciclaje</h2>
+
+<p><strong>Todo este proceso del reciclaje, pasa por varias fases:</strong> El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.
+  
+  En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. </p>
+<p>Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas. </p>
+<h2>Estrategia de tratamiento de residuos</h2>
+
+El reciclaje, al margen de su complejo proceso de transformación, es uno de los puntos básicos de estrategia de tratamiento de residuos 3R.
+
+<h2>Reducir</h2>
+<p>Acciones para reducir la producción de objetos susceptibles de convertirse en residuos. </p>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>R1</h1>
+   <div><img src="imagenes/redu.png" width="70%"></div>
+      </div>
+<h2>Reutilizar</h2>
+Acciones que permiten el volver a usar un producto para darle una segunda vida, con el mismo uso u otro diferente.
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>R2</h1>
+   <div><img src="imagenes/reut.png" width="70%"></div>
+      </div>
+<h2>Reciclar</h2>
+El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida.
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>R3</h1>
+   <div><img src="imagenes/reci.png" width="70%"></div>
+      </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a" >
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>MEDIDAS PREVENTIVAS</h1>
+</div>
+<div>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+  <li><img src="data1/images/pas1.jpg" alt="pas1" title="pas1" id="wows1_15"/></li>
+  <li><img src="data1/images/pas2.jpg" alt="pas2" title="pas2" id="wows1_1"/></li>
+		<li><img src="data1/images/pas3.jpg" alt="pas3" title="pas3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/pas4.jpg" alt="responsive slider" title="pas4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/pas5.jpg" alt="pas5" title="pas5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="pas1"><span><img src="data1/tooltips/pas1.jpg" alt="pas1"/>1</span></a>
+		<a href="#" title="pas2"><span><img src="data1/tooltips/pas2.jpg" alt="pas2"/>2</span></a>
+		<a href="#" title="pas3"><span><img src="data1/tooltips/pas3.jpg" alt="pas3"/>3</span></a>
+		<a href="#" title="pas4"><span><img src="data1/tooltips/pas4.jpg" alt="pas4"/>4</span></a>
+		<a href="#" title="pas5"><span><img src="data1/tooltips/pas5.jpg" alt="pas5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:70%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>MI COMUNIDAD</h1>
+   </div>
+  <div data-role="content" align="center">
+    <div>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atl2.jpg" alt="atl2" title="atl2" id="wows1_0"/></li>
+		<li><img src="data1/images/atl4.jpg" alt="atl4" title="atl4" id="wows1_1"/></li>
+		<li><img src="data1/images/atl5.jpg" alt="atl5" title="atl5" id="wows1_2"/></li>
+		<li><img src="data1/images/atl6.jpg" alt="atl6" title="atl6" id="wows1_3"/></li>
+		<li><img src="data1/images/atl7.jpg" alt="atl7" title="atl7" id="wows1_4"/></li>
+		<li><img src="data1/images/atl8.jpg" alt="atl8" title="atl8" id="wows1_5"/></li>
+		<li><img src="data1/images/atl9.jpg" alt="atl9" title="atl9" id="wows1_6"/></li>
+		<li><img src="data1/images/atl10.jpg" alt="atl10" title="atl10" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/atli1.jpg" alt="http://wowslider.com/" title="atli1" id="wows1_8"/></a></li>
+		<li><img src="data1/images/atli3.jpg" alt="atli3" title="atli3" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="atl2"><span><img src="data1/tooltips/atl2.jpg" alt="atl2"/>1</span></a>
+		<a href="#" title="atl4"><span><img src="data1/tooltips/atl4.jpg" alt="atl4"/>2</span></a>
+		<a href="#" title="atl5"><span><img src="data1/tooltips/atl5.jpg" alt="atl5"/>3</span></a>
+		<a href="#" title="atl6"><span><img src="data1/tooltips/atl6.jpg" alt="atl6"/>4</span></a>
+		<a href="#" title="atl7"><span><img src="data1/tooltips/atl7.jpg" alt="atl7"/>5</span></a>
+		<a href="#" title="atl8"><span><img src="data1/tooltips/atl8.jpg" alt="atl8"/>6</span></a>
+		<a href="#" title="atl9"><span><img src="data1/tooltips/atl9.jpg" alt="atl9"/>7</span></a>
+		<a href="#" title="atl10"><span><img src="data1/tooltips/atl10.jpg" alt="atl10"/>8</span></a>
+		<a href="#" title="atli1"><span><img src="data1/tooltips/atli1.jpg" alt="atli1"/>9</span></a>
+		<a href="#" title="atli3"><span><img src="data1/tooltips/atli3.jpg" alt="atli3"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+
+<!-- End WOWSlider.com BODY section -->
+<div data-role="content" align="center">
+  <p>-Afina y da mantenimiento a los automóviles    </p>
+  <p>– Evita quemar basura y llantas, así como el uso de cohetes artificiales    </p>
+  <p>– Evita comprar artículos desechables y plásticos que no son biodegradables.    </p>
+  <p>– Recicla la basura    </p>
+  <p>– No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa    </p>
+  <p>– Usa racionalmente los plaguicidas    </p>
+  <p>– Evita el consumo de tabaco</p>
+  <p> – Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad</p>
+  <p>– Pospón las tareas de jardinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono.    </p>
+  <p>– Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)</p>
+  <p> – Restringe la limpieza en seco.</p>
+  <p> – Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono.</p>
+  <p> – Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</p>
+  <p> – Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</p>
+  <p> – Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo. </p>
+ 
+</div>
+
+<p>Las soluciones que encuentro adecuadas son organizar un comité  que este patrocinado por toda la colonia Benito Juárez, de igual forma hablar  con el municipio para que nos ayuden a limpiar y que la policía este al  pendiente, por si llegan a tirar basura serán multados.</p>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>LINKS</h1>
+   </div>
+    <div data-role="content" align="top">
+    <div>
+        <h2>
+        <a href="http://www.contaminacionambiental.org/" target="_self">Causas y efectos De La Contaminación</a></h2>
+        <h2>        <a href="http://elblogverde.com/la-contaminacion/" target="_self">Contaminación</a></h2>
+        <h2>
+       <a href="http://www.greenpeace.org/mexico/es/Blog/Blog-de-Greenpeace-Verde/5-cosas-que-puedes-hacer-para-reducir-la-cont/blog/56391/" target="_self">Mas pasos para reducir la contaminación</a></u></h2>
+    </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicación Tres,EUMS</h4>
+</div>
+</div>
+</body>
+</html>
